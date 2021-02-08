@@ -2,7 +2,7 @@ Extras for Harvard Class EPI511: Advanced Population & Medical Genetics
 =======================================================================
 
 The EPI511.py file provided in the EPI511 class is a few years old.
-In contrast, the [minihapmap.py] file in this respository:
+In contrast, the [minihapmap.py](minihapmap.py) file in this respository:
 
 * reads the data files ~40 times faster
 * makes it not painful to load all autosomal chromosome SNPs
