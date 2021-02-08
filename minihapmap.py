@@ -43,10 +43,11 @@ class MiniHapMap:
         r = 0
         with open(self.data_dir / (population + '.geno'), mode='rb') as file:
             for line in file:
-                if r < len(raw):
-                    # ASCII byte '0' is encoded as the number 48
-                    raw[r] = np.frombuffer(line.rstrip(), dtype=np.int8) - 48
-                    r += 1
+                if r >= len(raw):
+                    break
+                # ASCII byte '0' is encoded as the number 48
+                raw[r] = np.frombuffer(line.rstrip(), dtype=np.int8) - 48
+                r += 1
         raw = np.ma.masked_outside(raw, 0, 2)
         self.genotypes = np.ma.append(self.genotypes, raw, axis=1)
 
@@ -57,3 +58,4 @@ class MiniHapMap:
         if chromosome is not None:
             ret = ret[self.snps.chromosome == chromosome, :]
         return ret
+
