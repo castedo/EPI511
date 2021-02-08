@@ -13,7 +13,7 @@ time (each taking only a few seconds to load)
 * is ~15 lines of code shorter
 * demonstrates some good Python programming practices such as:
   * use `class`
-  * avoid needed to modify the reusable file in order to use it
+  * avoid needing to modify the reusable file in order to use it
   * use pathlib.Path  
   * avoid global variables
 
