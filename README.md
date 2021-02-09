@@ -17,5 +17,7 @@ time (each taking only a few seconds to load)
   * use pathlib.Path  
   * avoid global variables
 
+See [example_usage.ipynb](example_usage.ipynb) on how it is used.
+
 If you have any questions, feel free to email castedo@castedo.com.
 
